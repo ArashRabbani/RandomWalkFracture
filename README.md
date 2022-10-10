@@ -9,3 +9,10 @@ These fractures are generated via a random walk approach which is inspired by th
 Figure below illustrates the cost minimization process which is used to generate a horizontal fracture in the Estaillades sample. As can be seen, at the initial generations of the random search, fracture path has a high cost due to hitting many high density zones in the image (Fig-a). Quickly, the algorithm finds pathways with a lower cost and start to bypass some expensive zones (Fig-b). And finally, after 1000 generations, a plausible trend for an artificial fracture is obtained in which the sample is cut at the points with the lowest cost while maintaining the optimization limits such as the maximum number of steps (Fig-c).
 
 It is noteworthy that the cost function is defined as the averaged values of the voxels within the fracture path. Also, the voxel cost of the whole map is normalized to be between 0 and 1 (Fig-d). 
+
+![Alt text](https://github.com/ArashRabbani/RandomWalkFracture/blob/main/im.jpg)
+
+# References
+Rabbani, A., Babaei, M., & Javadpour, F. (2020). A triple pore network model (T-PNM) for gas flow simulation in fractured, micro-porous and meso-porous media. Transport in Porous Media, 132(3), 707-740.
+([Link](https://link.springer.com/article/10.1007/s11242-020-01409-w))
+
