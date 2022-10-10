@@ -1,6 +1,7 @@
 # RandomWalkFracture
 Simulating fractures in heterogenous media using Random Walk approach
 
+This code can generate 
 ![Alt text](https://github.com/ArashRabbani/RandomWalkFracture/blob/main/Final.gif)
 
 
@@ -15,6 +16,9 @@ It is noteworthy that the cost function is defined as the averaged values of the
 # How to use?
 Open MATLAB and run "RandomWalkFracture.m". You need to replace your 2-D cost image in the "Data" directory. Then set the number of desired generations for searching a low cost fracture. 
 # References
-Rabbani, A., Babaei, M., & Javadpour, F. (2020). A triple pore network model (T-PNM) for gas flow simulation in fractured, micro-porous and meso-porous media. Transport in Porous Media, 132(3), 707-740.
+-Rabbani, A., Babaei, M., & Javadpour, F. (2020). A triple pore network model (T-PNM) for gas flow simulation in fractured, micro-porous and meso-porous media. Transport in Porous Media, 132(3), 707-740.
 ([Link](https://link.springer.com/article/10.1007/s11242-020-01409-w))
 
+-Mhiri, A., Blasingame, T. A., & Moridis, G. J. (2015, September). Stochastic modeling of a fracture network in a hydraulically fractured shale-gas reservoir. In SPE Annual Technical Conference and Exhibition. OnePetro.
+
+- Raw image source: Tom Bultreys, Luc Van Hoorebeke, Veerle Cnudde. Multi-scale, micro-computed tomography-based pore network models to simulate drainage in heterogeneous rocks. Advances in Water Resources. 2015.
