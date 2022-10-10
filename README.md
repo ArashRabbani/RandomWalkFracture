@@ -17,10 +17,10 @@ It is noteworthy that the cost function is defined as the averaged values of the
 # How to use?
 Open MATLAB and run "RandomWalkFracture.m". You need to replace your 2-D cost image in the "Data" directory. Then set the number of desired generations for searching a low cost fracture. The file "Fractured.png" will be the output. Also, a gif animated image will be saved to show the optimization process. 
 # References
--Rabbani, A., Babaei, M., & Javadpour, F. (2020). A triple pore network model (T-PNM) for gas flow simulation in fractured, micro-porous and meso-porous media. Transport in Porous Media, 132(3), 707-740.
+- Rabbani, A., Babaei, M., & Javadpour, F. (2020). A triple pore network model (T-PNM) for gas flow simulation in fractured, micro-porous and meso-porous media. Transport in Porous Media, 132(3), 707-740.
 ([Link](https://link.springer.com/article/10.1007/s11242-020-01409-w))
 
--Mhiri, A., Blasingame, T. A., & Moridis, G. J. (2015, September). Stochastic modeling of a fracture network in a hydraulically fractured shale-gas reservoir. In SPE Annual Technical Conference and Exhibition. OnePetro.
+- Mhiri, A., Blasingame, T. A., & Moridis, G. J. (2015, September). Stochastic modeling of a fracture network in a hydraulically fractured shale-gas reservoir. In SPE Annual Technical Conference and Exhibition. OnePetro.
 
 # Raw image sources:
 - Sandstone image: Gilbert Scott, Kejian Wu, Yingfang Zhou. Multi-scale Image-Based Pore Space Characterisation and Pore Network Generation: Case Study of a North Sea Sandstone Reservoir. Springer Link. 2019.
