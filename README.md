@@ -1,7 +1,7 @@
 # RandomWalkFracture
 Simulating fractures in heterogenous media using Random Walk approach
 
-This code can generates random fractures based on a cost map that describes the mechanical strength of the heterogenous material. Here, you can find two examples on geological porous materials. We have assumed that the graylevel of pixles is directly proportionate to the mechanical strength.
+This code can generates random fractures based on a cost map that describes the mechanical strength of the heterogenous material. An evolutionary search approach is implemented to find the minimum cost path. Here, you can find two examples on geological porous materials. We have assumed that the graylevel of pixles is directly proportionate to the mechanical strength.
 
 ![Alt text](https://github.com/ArashRabbani/RandomWalkFracture/blob/main/Sandstone.gif)
 ![Alt text](https://github.com/ArashRabbani/RandomWalkFracture/blob/main/Carbonate.gif)
