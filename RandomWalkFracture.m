@@ -31,7 +31,7 @@ Loc=.5;
 % to make inclined fractures 
 
 Bias=[0   1   1;... %   top-left    top     top-right
-      0   0   2;... %   left       center   right
+      0   0   1.5;... %   left       center   right
       0   1   1]';  %   bot-left   bottom   bot-right
 Bias=Bias(:);
 MaxMoves=S(2)*3; % Maximum number of steps
@@ -40,7 +40,12 @@ figure;      set(gcf, 'Units', 'Normalized', 'OuterPosition', [0 0 .5 .5]);
 ID=1;
 for I=1:Generations
     Cost=0;
+    if I==1
     MoveList=randw(Bias,MaxMoves)'; % randw function generates weighted random numbers that shows different directions 
+    else % mutation on 10% of moves
+        MoveList=BestMoveList;
+        MoveList(randi(MaxMoves,round(MaxMoves/10),1))=randw(Bias,round(MaxMoves/10))';
+    end
     Exit=0;
     % Starting point
     L=StartLocation;
@@ -67,14 +72,18 @@ for I=1:Generations
         B=Path(p(1),:);
         A=CostMap.*0; A(B)=1;
         Mask=1-imdilate(A,ones(Thickness));
-        subplot(1,2,1); imagesc(CostMap.*Mask); axis equal tight; c=colorbar; c.Label.String = 'Cost Values'; title('Fracture and cost map');
+        CM=colormap(parula(1024)); CM(1,:)=[1,0,0];
+        subplot(1,2,1); imagesc((CostMap+.01).*Mask); axis equal tight; colormap(CM); c=colorbar; c.Label.String = 'Cost Values'; title('Fracture and cost map');
     
     end
     BestList(I)=Best;
-        if I>1; subplot(1,2,2); hold on; box on; plot([I-1 I],BestList(I-1:I),'k');  xlabel('Generations'); ylabel('Cost'); drawnow;  end
+        if I>1; subplot(1,2,2); hold on; box on; plot([I-1 I],BestList(I-1:I),'b','LineWidth',1.5);  xlabel('Generations'); ylabel('Cost'); xlim([1,Generations]); drawnow;  end
 if mod(I,10)==2
     print(['Gif/' sprintf('%03d',ID) ],'-dpng');ID=ID+1;
 end
 end
 imwrite(CostMap.*Mask,'Fractured.png');
 make_video_gif
+
+% Sandstone image: Gilbert Scott, Kejian Wu, Yingfang Zhou. Multi-scale Image-Based Pore Space Characterisation and Pore Network Generation: Case Study of a North Sea Sandstone Reservoir. Springer Link. 2019.
+% Carbonate image: Tom Bultreys, Luc Van Hoorebeke, Veerle Cnudde. Multi-scale, micro-computed tomography-based pore network models to simulate drainage in heterogeneous rocks. Advances in Water Resources. 2015
