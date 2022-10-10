@@ -21,4 +21,4 @@ Open MATLAB and run "RandomWalkFracture.m". You need to replace your 2-D cost im
 
 -Mhiri, A., Blasingame, T. A., & Moridis, G. J. (2015, September). Stochastic modeling of a fracture network in a hydraulically fractured shale-gas reservoir. In SPE Annual Technical Conference and Exhibition. OnePetro.
 
-- Raw image source: Tom Bultreys, Luc Van Hoorebeke, Veerle Cnudde. Multi-scale, micro-computed tomography-based pore network models to simulate drainage in heterogeneous rocks. Advances in Water Resources. 2015.
+-Raw image source: Tom Bultreys, Luc Van Hoorebeke, Veerle Cnudde. Multi-scale, micro-computed tomography-based pore network models to simulate drainage in heterogeneous rocks. Advances in Water Resources. 2015.
