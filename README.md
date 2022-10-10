@@ -1,7 +1,8 @@
 # RandomWalkFracture
 Simulating fractures in heterogenous media using Random Walk approach
 
-This code can generate 
+This code can generates random fractures based on a cost map that describes the mechanical strength of the heterogenous material. 
+
 ![Alt text](https://github.com/ArashRabbani/RandomWalkFracture/blob/main/Final.gif)
 
 
